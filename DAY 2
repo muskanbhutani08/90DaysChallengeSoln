@@ -1,0 +1,12 @@
+DAY 2 DEVOPS 90 DAYS CHALLENGE
+
+Q1. Check your present working directory.
+Ans- pwd
+
+Q2. List all the files or directories including hidden files.
+Ans- ls -a
+
+Q3. Create a nested directory A/B/C/D/E?
+Ans - man mkdir
+      mkdir -p A/B/C/D/E
+                       
