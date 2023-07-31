@@ -1,0 +1,81 @@
+Day5 Tasks 90 Days Devops Challenge
+
+Q1. bash script createDirectories.sh creates 90 directories as day1 day2 day3 .... day90 AND Directory name Movie 20..50
+ans -- vim createDirctories.sh
+#!/bin/bash
+echo "Enter name of file"
+read name
+echo "Enter initial number"
+read num1
+echo "Enter final number"
+read num2
+
+for((i=$num1;i<=$num2;i++))
+do 
+  mkdir $name-$i
+done
+ls -l | grep $name
+----------------------------------------------------------------------------------------------------------------------------------------------
+Q2.Create a Script to backup all your work done till now.
+ans- vim ScriptBackup.sh
+#!/bin/bash
+src_dir="/home/ubuntu/31aug-task/source"
+tgt_dir="/home/ubuntu/31aug-task/destination"
+
+curr_time=$(date +"%y-%m-%d-%H-%m-%S")
+
+backupFile=$tgt_dir/$curr_time.tgz
+
+echo "$curr_time"
+
+tar czf $backupFile --absolute-names $src_dir
+
+echo "backup done"
+
+#/home/ubuntu/31aug-task/source
+#/home/ubuntu/31aug-task/destination
+#/home/ubuntu/31aug-task  -
+# source - backupScript.sh
+# destination
+#ScriptCode.sh
+----------------------------------------------------------------------------------
+Q3. Read About Cron and Crontab, to automate the backup Script
+ans - crontab -e
+*/1 * * * * /home/ubuntu/31aug-task/ScriptBackup.sh
+
+->Cron - Time
+run at the time of system reboot
+->Crontab - file contains schedule of cron enteries to be run at specified time
+->Cron Job/Cron Scheduler - specific set of executions specifying day, time nd cmd to be executed
+----------------------------------------------------------------------------------------------------------
+Q4. Read about User Management
+ans- User Management in linux involves creating, modifying and involving user account in the system.
+linux uses user based security which means each user ha specific permission and access right resources
+-Useradd
+sudo useradd username
+-password
+sudo passwd username
+-groupadd
+sudo groupadd groupname
+-add user to group
+sudo usermod -aG groupname username
+-user delete
+sudo userdel username
+--------------------------------------------------------------------------------------------
+Q5. Create 2 users and just display their Usernames
+ans- #!/bin/bash
+
+addUser()
+{
+        USER=$1
+        PASS=$2
+
+        useradd -m -p $PASS $USER
+        useradd -m -p $PASS $USER
+        echo "user added successfully"
+}
+
+#MAIN
+
+addUser newUser1 user@123
+addUser newUser2 user@345
