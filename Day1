@@ -1,0 +1,19 @@
+What is DevOps
+What is Automation, Scaling, Infrastructure
+Why DevOps is Important, etc?
+
+Answer--
+
+UNDERSTANDING DEVOPS:-
+Combination of Cultural practices and tools that increases organizations' ability to deliver applications at rapid speed.
+Practice where the development and operations teams work collaboratively to deliver applications more efficiently and at a rapid spee
+
+WHY DEVOPS IS IMPORTANT?
+1. faster development and deployment - DevOps practices provided an efficient software development lifecycle that enables businesses to respond more rapidly to demands and allows faster development, testing, and deployment.
+2. Continuous integration and delivery - a practice where code changes are automatically tested and deployed to production which ensures the continuous flow of updates and improvements.
+3. Enhanced software quality - Automated testing and monitoring in DevOps lead to higher software quality.
+
+DEVOPS FEATURES:-
+1. Automation - With Automation, Manual and Repetitive tasks are replaced or streamlined with scripts, tools, and workflows and helps to reduce errors and can save time.
+2. Scaling - Ability of a system to handle increased workload effectively. It involves adjusting resources such as computing power, storage, and networking to meet changing demands without compromising performance.
+3. Infrastructure - Infrastructure enables businesses to automate the provisioning and maintenance of their infrastructure, simplifying replication and consistency while encouraging teamwork
