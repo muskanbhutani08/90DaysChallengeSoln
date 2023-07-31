@@ -1,0 +1,31 @@
+Day 3 Task 90 Days devops challenge
+
+Q1. cmd To view what's written in a file?
+Ans- cat abc.txt
+
+Q2. To change the access permissions of files.
+Ans- chmod 777 abc.txt
+
+Q3. To check which commands you have run till now.
+Ans- history
+
+Q4. To remove a directory/ Folder.
+Ans- rm abc.txt
+     rm -r A
+
+Q5. To create a fruits.txt file and to view the content.
+Ans- touch fruits.txt
+     cat fruits.txt
+
+Q6. Add content in devops.txt (One in each line) - Apple, Mango, Banana, Cherry, Kiwi, Orange, Guava.
+Ans- Vim devops.txt (insert all these contents)
+
+Q7. To Show only top three fruits from the file.
+Ans- head -3 devops.txt
+
+Q8. To Show only bottom three fruits from the file.
+Ans- tail -3 devops.txt
+
+Q9. To create another file Colors.txt and to view the content.
+Ans - touch Colors.txt
+      cat Colors.txt
