@@ -1,0 +1,25 @@
+1. Create a simple file and do ls -ltr , chown, chgrp
+ans - ls -ltr abc.txt
+chmod u+x, g+w, o-r abc.txt
+chmod 770 def.txt 
+ls -ltr
+Change the ownership of a file/directory
+-sudo chown ubuntu abc.txt
+Change the group permission of a file/directory
+-chgrp ubuntu def.txt
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+2. Write an article about File Permissions based on your understanding from the notes.
+ans- file permissions control the access and permissions granted to users (users, groups, and others) for interacting with files and directories.
+The file permissions are represented by a combination of letters and symbols, which include read (r), write (w), and execute (x) permissions.
+4(r)2(w)1(1)
+777 - all permission
+chmod 777 abc.txt
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+3. Read about ACL and try out the commands getfacl and setfacl
+ans- Access control list (ACL) provides an additional, more flexible permission mechanism for file systems
+Think of a scenario in which a particular user is not a member of group created by you but still you want to give some read or write access,
+you can do it without making user a member of group by ACL
+
+sudo apt install acl
+getfacl   getfacl abc.txt  -- To show permissions 
+setfacl   setfacl -m g::rwx abc.txt -- giving group all permission
