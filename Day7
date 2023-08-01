@@ -1,0 +1,57 @@
+1...What is a package?
+-> A package in Linux is a compressed software archive file containing all the files included with a software application that provides any functionality.
+can be a command-line utility or software library. These packages are required to install, update, and upgrade the tools.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+2...What is a package manager in Linux?
+_> software tool used for package management in Linux i.e. to manage the installation, removal, and updating of various software packages.
+hub for all software packages available for your system. The package manager keeps track of all the installed packages on the system,
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+3...Different kinds of package managers ?
+->Different Linux distributions use different packaging systems to manage software packages.
+Debian-based distributions - .deb
+red hat - .rpm
+command line-based package - apt, apt-get
+JavaScript/Node.js Package Managers: - npm
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+4...Understanding systemctl and systemd ?
+-> 
+Systemctl - service manager for Linux operating systems. Responsible for starting and stopping system services and managing system resources.
+With systemctl, you can start, stop, restart, enable, and disable services, as well as view the status of running services
+sudo systemctl start <service_name>
+sudo systemctl stop <service_name>
+sudo systemctl restart <service_name>
+sudo systemctl reload <service_name>
+sudo systemctl start <service_name>
+sudo systemctl enable <service_name>
+sudo systemctl disable <service_name>
+Systemctl status <service_name>
+...................................................................................
+Systemd - system and service manager for Linux
+provides Aggressive parallelization capabilities
+Uses socket and D-Bus activation for starting services
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Task 1: Installing Docker and Jenkins Using Package Managers 
+->
+Docker---
+sudo apt update
+sudo apt install docker.io
+sudo systemctl start docker
+sudo systemctl enable docker
+sudo usermod -aG docker $USER
+Jenkins--
+sudo apt install openjdk-11-jdk
+wget -q -O - https://pkg.jenkins.io/debian/jenkins.io.key | sudo apt-key add -
+sudo apt install jenkins
+sudo systemctl start jenkins
+sudo systemctl enable jenkins
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Task 2: Checking the Status of the Docker Service
+-> $ pidof dockerd
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Task 3: Stopping the Jenkins Service 
+-> systemctl stop jenkins
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+5...Difference between systemctl and service
+->
+service is an "high-level" command used for starting and stopping services in different unixes and linuxes.
+systemctl is basically a more powerful version of service.
