@@ -1,0 +1,11 @@
+Day 11 of 90 Days Devops Challenge
+-----------------------------------------------------------------------------------------
+**GIT STASH--  command that allows you to temporarily save changes you have made in your working directory, without committing them
+useful when you need to switch to a different branch to work on something else, but you don't want to commit the changes you've made
+also use git stash drop to delete a stash and git stash clear to delete all the stashes.
+---------------------------------------------------------------------------------------------------------------------------------------
+**CHERRY PICK--  command that allows you to select specific commits from one branch and apply them to another
+useful when you want to selectively apply changes that were made in one branch to another
+-------------------------------------------------------------------------------------------------------------------------------------------
+** Conflicts -- can occur when you merge or rebase branches that have diverged, and you need to manually resolve the conflicts before git can proceed with the merge/rebase
+git status command shows the files that have conflicts
