@@ -1,0 +1,19 @@
+Day 10 of 90 Days of Devops
+-------------------------------------------------------------------------------------------------------------------------------------------
+** GIT BRANCHING-- allows us to work on different features, bug fixes in isolation without affecting the other repositories
+each repositories have different branches but default one is same for all that is Main/Master
+it helps in Develop features and fix bugs separately, and by changing or modifying in branch won't effect original code.
+-----------------------------------------------------------------------------------------------------------------------------------------
+** GIT REVERT -- Creates a new commit and maintains version history
+-->> git revert commitId
+......................................................................
+**GIT RESET -- Doesn't maintain version history, try to avoid use it as it deletes all the version history
+-->> git reset commitId
+---------------------------------------------------------------------------------------------------------------------------------------------
+** GIT REBASE--
+Allows us to integrate changes from one branch to another, In a linear sequence we can see logs and history
+-->> git rebase master
+--------------------------------------------------------------------------------------------------------------------------------------------------
+**GIT MERGE-- let's you merge different git branches and is not linear in terms of logs and history
+-->> git checkout master 
+git merge dev
