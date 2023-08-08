@@ -1,0 +1,29 @@
+DAY 8 OF 90 DAYS OF DEVOPS
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+** GIT --- Version Control System that allows us to track changes to the file and co-ordinate work on those files among multiple people. Used to track changes to any set 
+of files.
+..................................................................................................................................................................................................................................................................................................................
+** GITHUB -- Platform for developers to share and collaborate projects and used for hosting open source projects.
+..................................................................................................................................................................................................................................................................................................................
+** Version Control System and its Types --
+System thet tracks changes to the files and allows us to revert back to previous state and compare changes over time.
+* Types:
+1. Distributed VCS - allows developers to clone an entire repository including the entire version history of the project
+2. Centralized VCS - uses a central server to store all the versions of a project's files
+......................................................................................................................................................................................................................................................................
+** Distributed VCS over Centralized VCS
+1. Better Collaboration
+2. Improve speed
+3. Greater Flexibilty
+4. Enhanced security
+..................................................................................................................................................................................
+TASK 1- Create a new repository on GitHub and clone it to your local machine
+->> git clone https://github.com/muskanbhutani08/90DaysChallengeSoln.git
+----------------------------------------------------------------------------------------------
+TASK 2-Make some changes to a file in the repository and commit them to the repository using Git
+->> vim commands.txt
+git add commands.txt
+git commit -m "clonning file"
+----------------------------------------------------------------------------------------------
+TASK 3- Push the changes back to the repository on GitHub
+-->> git push origin main
