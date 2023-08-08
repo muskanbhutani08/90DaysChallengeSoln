@@ -1,0 +1,41 @@
+Day 9 of 90 Days of devops
+.........................................................................................................................................................................
+** GIT -- Version Control System that allows us to track changes to the file and co-ordinate work on those files among multiple people. Used to track changes to any set 
+of files.
+IMPORTANCE OF GIT-
+1. VCS/Tracks History - allows developers to track changes in their code over time
+2. Free and open source - developers around the world contribute to projects without being physically present
+3. Branching is easier - Developers can create separate branches to work on specific features and bug fixes
+4. Creates backups - entire history of the project is stored locally on each developer's machine
+5. Scalable 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Ques- What is difference Between Main Branch and Master Branch?
+ANS-- There is no difference. Main or master is default branch when you create a repository. GitHub now use "main" as it's default branch. 
+Earlier, Microsoft GitHub have master as their default branch, but some peoples at Microsoft thinks that master name kind of similar term related to slavery
+which is offensive, so they changed its name to main
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Ques -  difference between Git and GitHub?
+ANS-- GIT - 
+*Version Control System that allows us to track changes to the file and co-ordinate work on those files among multiple people. Used to track changes to any set 
+of files.
+*Git does not require a centralized server to operate. Developers can create and maintain their own repositories independently.
+GitHub-
+*Platform for developers to share and collaborate projects and used for hosting open source projects.
+* hosts Git repositories online, making it easy for developers to store, share, and collaborate on code with others.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+QUES - How do you create a new repository on GitHub?
+ANS- Log in to your GitHub account.
+On the GitHub homepage, click the "+" button at the top-right corner, then select "New repository" from the menu
+Give your repository name and add a description and make your repository visibility as public or private.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+QUES - What is difference between local & remote repository? How to connect local to remote?
+ANS- LOCAL -1. local repository exists on your local computer's storage
+2. allows you to work on your code even when you're not connected to the internet.
+3. contains the entire history of your project's code(Commite, files)
+REMOTE -1. exists on a remote server, often hosted by a platform like GitHub
+2. used for collaboration and sharing code with others
+3. Developers can pull changes from the remote repository to update their local repositories, and they can push their changes to the remote repository to share them with others.
+ connect local to remote?---
+  git remote add origin <remote_repository_url>
+  git remote -v
+
